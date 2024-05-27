@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PASSWORD GENERATOR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form">
+
+
+    <input type="text" name="PASSWORD" id="PASSWORD" disabled placeholder="Generated Password">
+    <br>
+
+    <div class="column">
+      <label for="length">Password Length</label>
+      <input type="number" 
+      id="number" min="4" max="30" 
+     value="10">
+    </div>
+
+    <br>
+
+    <div class="column">
+      <label for="UPPERCASE">Contains Uppercase</label>
+      <input type="checkbox" name="UPPERCASE" id="Uppercase">
+    </div>
+
+    <br>
+
+    <div class="column">
+      <label for="LOWERCASE">Contains Lowercase</label>
+      <input type="checkbox" name="LOWERCASE" id="Lowercase">
+    </div>
+
+    <br>
+
+    <div class="column">
+      <label for="NUMBERS">Contains Numbers</label>
+      <input type="checkbox" name="NUMBERS" id="digit">
+    </div>
+
+    <br>
+
+    <div class="column">
+      <label for="SPECIALCASE">Contains Specialcase</label>
+      <input type="checkbox" name="SPECIALCASE" id="Special">
+    </div>
+
+    <input type="submit" value="Generate Password" id="Generate" class="pass" >
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
